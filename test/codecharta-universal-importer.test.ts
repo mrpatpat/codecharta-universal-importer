@@ -12,13 +12,13 @@ describe("CodechartaUniversalImporter", () => {
 
   it("should return correct analyzed files", () => {
     const i = new CodechartaUniversalImporter();
-    const analyzed: AnalyzedFile[] = i.analyzeDirectory("test/sample-projects");
+    const analyzed: AnalyzedFile[] = i.analyzeDirectory("test/sample-projects/typescript");
     expect(analyzed).toMatchSnapshot();
   })
 
   it("pg", () => {
     const i = new CodechartaUniversalImporter();
-    const analyzed: AnalyzedFile[] = i.analyzeDirectory("src");
+    const analyzed: AnalyzedFile[] = i.analyzeDirectory("test/sample-projects/javascript/prettier");
     console.log(analyzed);
   })
 
