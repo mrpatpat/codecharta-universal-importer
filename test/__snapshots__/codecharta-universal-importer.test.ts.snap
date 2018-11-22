@@ -4,6 +4,24 @@ exports[`CodechartaUniversalImporter should return correct analyzed files 1`] = 
 Array [
   AnalyzedFile {
     "metrics": Object {
+      "averageMaintainability": -1,
+      "minMaintainability": -1,
+      "sloc_block_lines": "0",
+      "sloc_comment_lines": "0",
+      "sloc_empty_lines": "0",
+      "sloc_mixed_lines": "0",
+      "sloc_single_lines": "0",
+      "sloc_source_lines": "1",
+      "sloc_todo_lines": "0",
+      "sloc_total_lines": "1",
+      "unary": "1",
+    },
+    "path": "test/sample-projects/typescript/hello-old-world.js",
+  },
+  AnalyzedFile {
+    "metrics": Object {
+      "averageMaintainability": -1,
+      "minMaintainability": -1,
       "sloc_block_lines": "0",
       "sloc_comment_lines": "0",
       "sloc_empty_lines": "3",
@@ -18,6 +36,8 @@ Array [
   },
   AnalyzedFile {
     "metrics": Object {
+      "averageMaintainability": -1,
+      "minMaintainability": -1,
       "sloc_block_lines": "0",
       "sloc_comment_lines": "0",
       "sloc_empty_lines": "3",

@@ -26,7 +26,7 @@ export default class CodechartaUniversalImporter {
     private analyzeFile(path: string, content: string, language: Languages): AnalyzedFile {
         const provider: Provider[] = this.providerRegistry.getProvider(language);
         const result = new AnalyzedFile(path);
-        provider.forEach(p=>result.addMetrics(p.analyze(content)));
+        provider.forEach(p=>result.addMetrics(p.analyze(content, path)));
         return result;
     }
 

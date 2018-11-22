@@ -1,3 +1,3 @@
 export interface Provider {
-    analyze(code: string): Metrics
+    analyze(code: string, path: string): Metrics
 }

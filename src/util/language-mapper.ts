@@ -8,6 +8,9 @@ export class LanguageMapper {
             case "ts": 
             case "tsx":
                 return Languages.TYPESCRIPT;
+            case "js": 
+            case "jsx":
+                return Languages.JAVASCRIPT;        
             default:     
                 return Languages.UNKNOWN;
         };

@@ -5,7 +5,7 @@ export class SlocProvider implements Provider{
 
     constructor(private language: string) {}
 
-    analyze(code: string): Metrics {
+    analyze(code: string, path: string): Metrics {
         const stats = sloc(code, this.language);
         const metrics: Metrics = {}; 
         for(let i in sloc.keys){

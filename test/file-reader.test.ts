@@ -5,10 +5,7 @@ describe("FileReader", () => {
   it("should read multiple files in a given directory", async () => {
     const fr = new FileReader();
     const result = fr.collectFiles("test/sample-projects");
-    expect(result).toEqual([
-      "test/sample-projects/typescript/hello-universe.ts",
-      "test/sample-projects/typescript/hello-world.ts"
-    ]);
+    expect(result).toMatchSnapshot();
   })
 
   it("should read multiple file contents in a given directory", async () => {

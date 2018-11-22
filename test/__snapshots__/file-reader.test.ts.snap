@@ -2,6 +2,7 @@
 
 exports[`FileReader should read multiple file contents in a given directory 1`] = `
 Array [
+  "window.alert(\\"HELLLOOOOO\\");",
   "export class HelloUniverse {
 
     public getHello(): string {
@@ -24,5 +25,13 @@ Array [
     }
 
 }",
+]
+`;
+
+exports[`FileReader should read multiple files in a given directory 1`] = `
+Array [
+  "test/sample-projects/typescript/hello-old-world.js",
+  "test/sample-projects/typescript/hello-universe.ts",
+  "test/sample-projects/typescript/hello-world.ts",
 ]
 `;
