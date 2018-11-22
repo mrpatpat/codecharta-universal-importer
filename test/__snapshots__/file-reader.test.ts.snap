@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileReader should read multiple file contents in a given directory 1`] = `
+Array [
+  "export class HelloUniverse {
+
+    public getHello(): string {
+        return \\"Hello Universe!\\";
+    }
+
+    public sayHello(): void {
+        console.log(this.getHello());
+    }
+
+}",
+  "export class HelloWorld {
+
+    public getHello(): string {
+        return \\"Hello World!\\";
+    }
+
+    public sayHello(): void {
+        console.log(this.getHello());
+    }
+
+}",
+]
+`;
