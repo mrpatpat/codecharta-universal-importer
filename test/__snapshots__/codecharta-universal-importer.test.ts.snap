@@ -4,8 +4,6 @@ exports[`CodechartaUniversalImporter should return correct analyzed files 1`] = 
 Array [
   AnalyzedFile {
     "metrics": Object {
-      "averageMaintainability": -1,
-      "minMaintainability": -1,
       "sloc_block_lines": "0",
       "sloc_comment_lines": "0",
       "sloc_empty_lines": "0",
@@ -20,8 +18,6 @@ Array [
   },
   AnalyzedFile {
     "metrics": Object {
-      "averageMaintainability": -1,
-      "minMaintainability": -1,
       "sloc_block_lines": "0",
       "sloc_comment_lines": "0",
       "sloc_empty_lines": "3",
@@ -36,8 +32,6 @@ Array [
   },
   AnalyzedFile {
     "metrics": Object {
-      "averageMaintainability": -1,
-      "minMaintainability": -1,
       "sloc_block_lines": "0",
       "sloc_comment_lines": "0",
       "sloc_empty_lines": "3",
