@@ -12,7 +12,7 @@ describe("CodechartaUniversalImporter", () => {
 
   it("should return correct analyzed files", () => {
     const i = new CodechartaUniversalImporter();
-    const analyzed: AnalyzedFile[] = i.analyze("test/sample-projects");
+    const analyzed: AnalyzedFile[] = i.analyzeDirectory("test/sample-projects");
     expect(analyzed).toMatchSnapshot();
   })
 
