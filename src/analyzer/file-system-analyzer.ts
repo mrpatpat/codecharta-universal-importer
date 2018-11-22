@@ -12,6 +12,7 @@ export class FileSystemAnalyzer {
     public analyze(dir: string): AnalyzedFile[] {
         const fr = new FileReader();
         const files = fr.collectFiles(dir);
+        
         return files.map(file => {
             const code = fr.readFile(file);
             const language = LanguageMapper.getLanguageFromPath(file);

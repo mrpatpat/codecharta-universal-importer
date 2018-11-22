@@ -16,4 +16,10 @@ describe("CodechartaUniversalImporter", () => {
     expect(analyzed).toMatchSnapshot();
   })
 
+  it("pg", () => {
+    const i = new CodechartaUniversalImporter();
+    const analyzed: AnalyzedFile[] = i.analyzeDirectory("src");
+    console.log(analyzed);
+  })
+
 })

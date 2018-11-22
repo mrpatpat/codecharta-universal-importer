@@ -1,7 +1,7 @@
 import { Provider } from "./provider";
 import { Languages } from "../model/languages";
 import { SlocProvider } from "./sloc-provider";
-import { UnaryProvider } from "./unary-provider";
+import { SonarTsProvider } from "./sonarts-provider";
 
 export class ProviderRegistry {
 
@@ -9,8 +9,8 @@ export class ProviderRegistry {
 
     constructor() {
         this.register(Languages.TYPESCRIPT, new SlocProvider("ts"));
+        this.register(Languages.TYPESCRIPT, new SonarTsProvider());
         this.register(Languages.JAVASCRIPT, new SlocProvider("js"));
-        this.register(Languages.ALL, new UnaryProvider());
     }
 
     register(language: Languages, provider: Provider) {
