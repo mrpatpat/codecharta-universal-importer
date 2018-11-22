@@ -10,6 +10,7 @@ export class ProviderRegistry {
     constructor() {
         this.register(Languages.TYPESCRIPT, new SlocProvider("ts"));
         this.register(Languages.TYPESCRIPT, new SonarTsProvider());
+        this.register(Languages.JAVASCRIPT, new SonarTsProvider());
         this.register(Languages.JAVASCRIPT, new SlocProvider("js"));
     }
 
