@@ -16,10 +16,16 @@ describe("CodechartaUniversalImporter", () => {
     expect(analyzed).toMatchSnapshot();
   })
 
-  it("pg", () => {
+  it("should correctly analyze prettierJS", () => {
     const i = new CodechartaUniversalImporter();
     const analyzed: AnalyzedFile[] = i.analyzeDirectory("test/sample-projects/javascript/prettier");
-    console.log(analyzed);
+    expect(analyzed).toMatchSnapshot();
+  })
+  
+  it("should correctly analyze files and export into a cc map", () => {
+    const i = new CodechartaUniversalImporter();
+    const cc: string = i.buildCodechartaFromDirectory("test/sample-projects/javascript/prettier", "PrettierJS");
+    expect(cc).toMatchSnapshot();
   })
 
 })
